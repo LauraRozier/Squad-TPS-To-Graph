@@ -20,8 +20,8 @@ namespace Squad_TPS_To_Graph
 
         private int FZoomLevel = 0;
         private const float CZoomScale = 4f;
-        private const float CWarnColorThreshold = 12f;
-        private const float CGoodColorThreshold = 20f;
+        private const float CWarnColorThreshold = 10f; // If greater then this, orange
+        private const float CGoodColorThreshold = 15f; // If greater then this, green
 
         public FormMain()
         {
@@ -127,12 +127,12 @@ namespace Squad_TPS_To_Graph
                     int itemIndex = chartTPS.Series[0].Points.AddXY(data.Timestamp.ToOADate(), data.Value);
                     edtTPSLog.AppendText(
                         data.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff", System.Globalization.CultureInfo.InvariantCulture) +
-                        $",{data.Value}{Environment.NewLine}"
+                        $",{data.Value.ToString(System.Globalization.CultureInfo.InvariantCulture)}{Environment.NewLine}"
                     );
 
-                    if (data.Value >= CGoodColorThreshold) {
+                    if (data.Value > CGoodColorThreshold) {
                         chartTPS.Series[0].Points[itemIndex].Color = System.Drawing.Color.Green;
-                    } else if (data.Value >= CWarnColorThreshold) {
+                    } else if (data.Value > CWarnColorThreshold) {
                         chartTPS.Series[0].Points[itemIndex].Color = System.Drawing.Color.Orange;
                     } else {
                         chartTPS.Series[0].Points[itemIndex].Color = System.Drawing.Color.Red;
