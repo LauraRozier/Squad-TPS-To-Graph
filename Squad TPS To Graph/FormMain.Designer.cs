@@ -27,9 +27,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.btnOpenLog = new System.Windows.Forms.Button();
             this.ofdLogFile = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -106,30 +106,30 @@
             // 
             // chartTPS
             // 
-            chartArea3.AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:ss.fff";
-            chartArea3.AxisY.Interval = 5D;
-            chartArea3.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea3.AxisY.IntervalOffset = 5D;
-            chartArea3.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea3.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea3.CursorX.IsUserEnabled = true;
-            chartArea3.Name = "ChartArea1";
-            this.chartTPS.ChartAreas.Add(chartArea3);
+            chartArea1.AxisX.LabelStyle.Format = "yyyy-MM-dd HH:mm:ss.fff";
+            chartArea1.AxisY.Interval = 5D;
+            chartArea1.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea1.AxisY.IntervalOffset = 5D;
+            chartArea1.AxisY.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.AxisY.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.CursorX.IsUserEnabled = true;
+            chartArea1.Name = "ChartArea1";
+            this.chartTPS.ChartAreas.Add(chartArea1);
             this.chartTPS.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chartTPS.Legends.Add(legend3);
+            legend1.Name = "Legend1";
+            this.chartTPS.Legends.Add(legend1);
             this.chartTPS.Location = new System.Drawing.Point(3, 3);
             this.chartTPS.Name = "chartTPS";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Color = System.Drawing.Color.Green;
-            series3.Legend = "Legend1";
-            series3.MarkerSize = 8;
-            series3.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
-            series3.Name = "TPS";
-            series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime;
-            series3.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single;
-            this.chartTPS.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Color = System.Drawing.Color.Green;
+            series1.Legend = "Legend1";
+            series1.MarkerSize = 8;
+            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Cross;
+            series1.Name = "TPS";
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime;
+            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single;
+            this.chartTPS.Series.Add(series1);
             this.chartTPS.Size = new System.Drawing.Size(1311, 623);
             this.chartTPS.TabIndex = 0;
             this.chartTPS.Text = "chart1";
